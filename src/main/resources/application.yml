@@ -1,7 +1,6 @@
 server:
     error:
-        include-stacktrace: on_param
-
+        include-stacktrace: never  # Melhor para produção
 
 spring:
     datasource:
@@ -10,4 +9,5 @@ spring:
         password: root
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: validate  # Melhor para produção, evita alterações no banco de dados
+
