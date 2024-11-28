@@ -22,7 +22,7 @@ public class Feminino {
     private Long id;
     private String imagem;
     private String nome;
-    private double preco;
+    private String preco;
     private String vezesCartao;
 
 

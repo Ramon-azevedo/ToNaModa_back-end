@@ -2,14 +2,14 @@ version: '4.36.0'
 services:
   db:
     image: mysql
-    container_name: ModaBack-end
+    container_name: modaBack-end
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_TCP_PORT: 3310
+      MYSQL_TCP_PORT: 3311
     ports:
-      - "3310:3310"
+      - "3311:3311"
     volumes:
-      - toNaModa_data:/var/lib/mysql
+      - Moda_data:/var/lib/mysql
 
 volumes:
-  toNaModa_data:
+  Moda_data:
