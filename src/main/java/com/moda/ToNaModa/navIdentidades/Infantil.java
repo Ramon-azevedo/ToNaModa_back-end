@@ -1,4 +1,4 @@
-package com.moda.ToNaModa.identidades;
+package com.moda.ToNaModa.navIdentidades;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,13 +10,13 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name = "Feminino")
-@Table(name = "FemininoItens")
+@Entity(name = "Infantil")
+@Table(name = "InfantilItens")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class Feminino {
+public class Infantil {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -27,3 +27,4 @@ public class Feminino {
 
 
 }
+

@@ -1,7 +1,7 @@
-package com.moda.ToNaModa.controles;
+package com.moda.ToNaModa.navControles;
 
-import com.moda.ToNaModa.identidades.*;
-import com.moda.ToNaModa.repositorios.*;
+import com.moda.ToNaModa.navIdentidades.*;
+import com.moda.ToNaModa.navRepositorios.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
