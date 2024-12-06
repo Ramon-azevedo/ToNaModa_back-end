@@ -21,6 +21,11 @@ public class FemininoControll {
         return ResponseEntity.ok(femininoRepositorio.findAll());
     }
 
+    @GetMapping("/getFemininoId/{id}")
+    public ResponseEntity<?> getFemininoId(@PathVariable Long id) {
+        return ResponseEntity.ok(femininoRepositorio.findById(id));
+    }
+
     @PostMapping("/postFeminino")
     public ResponseEntity<?> postFeminino(@RequestBody Feminino feminino) {
         return ResponseEntity.ok(femininoRepositorio.save(feminino));
