@@ -7,6 +7,12 @@ spring:
         url: jdbc:mysql://localhost:3311/ModaBack?createDatabaseIfNotExist=true
         username: root
         password: root
+
     jpa:
         hibernate:
             ddl-auto: update
+
+api:
+    security:
+        token:
+            secret: "${API_SECURITY_TOKEN_SECRET:valor-padrao}"
