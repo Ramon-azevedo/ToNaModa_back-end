@@ -4,9 +4,11 @@ import com.moda.ToNaModa.loginIdentidade.*;
 import com.moda.ToNaModa.loginRepositorio.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.security.core.userdetails.*;
+import org.springframework.stereotype.*;
 
 import java.util.*;
 
+@Component
 public class CustomUserDetailsService implements UserDetailsService {
     @Autowired
     private LoginRepositorio loginRepositorio;
